@@ -71,6 +71,21 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
 
+    /**
+     * this checks if a city object is in list
+     * @param city
+     */
+    public boolean hasCity(City city){
+        for (City item : cities) {
+            if (item.equals(city)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
 
 
 
