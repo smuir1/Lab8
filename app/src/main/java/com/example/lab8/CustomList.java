@@ -58,5 +58,26 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
+    /**
+     * this deletes a city object from the list
+     * @param city
+     */
+    public void deleteCity(City city){
+        cities.remove(city);
+    }
+
+    /**
+     * this checks if a city object is in list
+     * @param city
+     */
+    public boolean hasCity(City city){
+        for (City item : cities) {
+            if (item.equals(city)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }
